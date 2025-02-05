@@ -1,11 +1,11 @@
 // components/HeroSection.js
 export default function HeroSection() {
     return (
-        <section className="w-full min-h-screen flex items-center justify-center px-0 bg-black-900">
+        <section className="w-full min-h-screen flex items-center justify-center pr-4 md:pr-0 pt-20 bg-black">
         {/* Container, der den Inhalt begrenzt (max-width) und zentriert */}
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Linke Spalte: Text */}
-          <div className="pl-20 md:w-1/2 flex flex-col">
+          <div className="px-14 md:w-1/2 flex flex-col md:ml-4 md:mb-72">
             <h1 className="text-7xl font-bold mb-4">Hi, I am <span className="text-mainAkzent text-glow">Timon</span></h1>
             <p className="mb-4">
               Welcome to my digital playground, where I show my projects
