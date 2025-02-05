@@ -24,19 +24,19 @@ const projectsData = [
         id: 4,
         imageSrc: "images/encoder.png",
         altText: "Project 3",
-        description: "Test3",
+        description: "Test4",
     },
     {
         id: 5,
         imageSrc: "images/encoder.png",
         altText: "Project 3",
-        description: "Test3",
+        description: "Test5",
     },
     {
         id: 6,
-        imageSrc: "images/encoder.png",
+        imageSrc: "images/jannes.png",
         altText: "Project 3",
-        description: "Test3",
+        description: "Test",
     },
 ];
 

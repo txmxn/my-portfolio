@@ -10,7 +10,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        mainAkzent: '#76B900',
+        mainAkzent: '#20C20E',
         dunkelgrau: '#161617'
       },
     },
