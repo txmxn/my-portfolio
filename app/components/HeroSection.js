@@ -8,15 +8,20 @@ export default function HeroSection() {
           <div className="pl-20 md:w-1/2 flex flex-col">
             <h1 className="text-7xl font-bold mb-4">Hi, I am <span className="text-mainAkzent text-glow">Timon</span></h1>
             <p className="mb-4">
-              Welcome to my personal Website
+              Welcome to my digital playground, where I show my projects
             </p>
             <div className="flex gap-4">
-              <button className="bg-black-500 text-mainAkzent px-10 py-3 rounded hover:bg-green-600 w-fit border border-mainAkzent">
+              <a 
+                href=""
+                className="bg-black-500 text-mainAkzent px-10 py-3 rounded transform transition-transform duration-300 hover:scale-105 w-fit border border-mainAkzent">
                 Show CV
-              </button>
-              <button className="bg-mainAkzent text-white px-6 py-3 rounded hover:bg-green-600 w-fit">
+              </a>
+              <a 
+                href="#projects" 
+                className="bg-mainAkzent text-white px-6 py-3 rounded transform transition-transform duration-300 hover:scale-105 w-fit"
+              >
                 My Projects
-              </button>
+              </a>
             </div>  
           </div>
 
