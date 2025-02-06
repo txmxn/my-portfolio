@@ -1,9 +1,29 @@
+"use client";
+import { useEffect } from "react";
 // components/HeroSection.js
 export default function HeroSection() {
+  useEffect(() => {
+    const video = document.querySelector("#home video");
+
+    if (video) {
+      video.playbackRate = 0.5;
+    }
+  }, []);
     return (
-        <section id="home" className="w-full min-h-[60vh] flex items-center justify-center md:pr-0 pt-20 md:pt-6 bg-black">
+        <section id="home" className="relative w-full min-h-[60vh] flex items-center justify-center md:pr-0 pt-20 md:pt-6 bg-black overflow-hidden">
+          {/* 🎥 Video-Hintergrund */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-40 z-0"
+          >
+          <source src="/videos/matrix.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         {/* Container, der den Inhalt begrenzt (max-width) und zentriert */}
-        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
           {/* Linke Spalte: Text */}
           <div className="px-14 md:w-1/2 flex flex-col md:ml-4 md:mb-28">
             <h1 className="text-7xl font-bold mb-2">Hi, I am <span className="text-mainAkzent text-glow">Timon</span></h1>
