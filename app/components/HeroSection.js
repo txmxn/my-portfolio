@@ -1,7 +1,7 @@
 // components/HeroSection.js
 export default function HeroSection() {
     return (
-        <section id="home" className="w-full min-h-screen flex items-center justify-center md:pr-0 pt-20 md:pt-6 bg-black">
+        <section id="home" className="w-full min-h-[60vh] flex items-center justify-center md:pr-0 pt-20 md:pt-6 bg-black">
         {/* Container, der den Inhalt begrenzt (max-width) und zentriert */}
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Linke Spalte: Text */}

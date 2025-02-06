@@ -13,6 +13,11 @@ export default function Header() {
         <nav>
           <ul className="flex gap-4">
             <li>
+              <a href="#home" className="hover:text-mainAkzent">
+                Home
+              </a>
+            </li>
+            <li>
               <a href="#about" className="hover:text-mainAkzent">
                 About
               </a>
