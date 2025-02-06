@@ -66,7 +66,7 @@ export default function Projects() {
                     {/*Linker Pfeil */}
                     <button
                         onClick={() => scroll("left")}
-                        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10"
+                        className="absolute left-2 top-1/2 w-10 h-10 items-center justify-center flex -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full z-10 shadow-md hover:bg-gray-600 transition-colors duration-200"
                     >
                         &#8592;
                     </button>
@@ -86,7 +86,7 @@ export default function Projects() {
                     {/* Rechter Pfeil */}
                     <button
                         onClick={() => scroll("right")}
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full z-10"
+                        className="absolute right-2 top-1/2 w-10 h-10 items-center justify-center flex -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full z-10 shadow-md hover:bg-gray-600 transition-colors duration-200"
                     >
                         &#8594;
                     </button>
