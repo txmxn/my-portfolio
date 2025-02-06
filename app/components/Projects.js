@@ -54,8 +54,8 @@ export default function Projects() {
   };
     return (
         <section id="projects" className="bg-dunkelgrau min-h-96 py-10">
-            <div className="container px-10 mx-auto max-w-screen-xl">
-                <h1 className="text-white pt-10 pb-2 text-4xl font-bold text-center text-opacity-70">
+            <div className="container px-10 py-4 mx-auto max-w-screen-xl">
+                <h1 className="text-white pb-2 text-4xl font-bold text-center text-opacity-70">
                     My Projects<span className="text-mainAkzent"></span> 
                 </h1>
                 <p className="text-white text-center text-opacity-30 text-xs">

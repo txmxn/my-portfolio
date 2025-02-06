@@ -13,17 +13,17 @@ export default function Header() {
         <nav>
           <ul className="flex gap-4">
             <li>
-              <a href="#about" className="hover:text-green-500">
+              <a href="#about" className="hover:text-mainAkzent">
                 About
               </a>
             </li>
             <li>
-              <a href="#projects" className="hover:text-green-500">
+              <a href="#projects" className="hover:text-mainAkzent">
                 Projects
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-green-500">
+              <a href="#contact" className="hover:text-mainAkzent">
                 Contact
               </a>
             </li>

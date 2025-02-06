@@ -14,24 +14,24 @@ export default function Footer() {
 
                 {/* Navigation / Quick Links */}
                 <nav>
-                    <ul className="flex flex-col md:flex-row gap-4">
+                    <ul className="flex flex-row gap-2 md:gap-4">
                         <li>   
-                            <a href="#home" className="hover:text-green-500">
+                            <a href="#home" className="hover:text-mainAkzent">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="#about" className="hover:text-green-500">
+                            <a href="#about" className="hover:text-mainAkzent">
                                 About
                             </a>
                         </li>
                         <li>
-                            <a href="#projects" className="hover:text-green-500">
+                            <a href="#projects" className="hover:text-mainAkzent">
                                 Projects
                             </a>
                         </li>
                         <li>
-                            <a href="#contact" className="hover:text-green-500">
+                            <a href="#contact" className="hover:text-mainAkzent">
                                 Contact
                             </a>
                         </li>
@@ -44,8 +44,8 @@ export default function Footer() {
                     <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-xs text-gray-400">
                         <p>© {new Date().getFullYear()} Timon Kayser. All rights reserved.</p>
                         <p>
-                            Built with <span className="text-green-500">Next.js</span> &amp;{' '}
-                            <span className="text-green-500">Tailwind</span>
+                            Built with <span className="text-mainAkzent">Next.js</span> &amp;{' '}
+                            <span className="text-mainAkzent">Tailwind</span>
                         </p>
                     </div>
                 </div>
