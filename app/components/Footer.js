@@ -4,14 +4,14 @@ export default function Footer() {
         <footer className="bg-black text-white">
             {/* Unterer Bereich: Copyright */}
             <div className="border-t border-gray-700 py-4">
-                <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-xs text-gray-400">
+                <div className="container mx-auto px-4 flex flex-col items-center text-center md:flex-row md:justify-between md:text-left text-xs text-gray-400">
                     {/* Linker Bereich: Copyright */}
                     <div>
                         <p>© {new Date().getFullYear()} Timon Kayser. All rights reserved.</p>
                     </div>
 
                     {/* Rechter Bereich: Built with & Icons8 */}
-                    <div className="flex flex-col items-end text-right">
+                    <div className="flex flex-col items-center md:items-end text-center md:text-right">
                         <p>
                             Built with <span className="text-mainAkzent">Next.js</span> &amp;{' '}
                             <span className="text-mainAkzent">Tailwind</span>
