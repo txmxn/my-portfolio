@@ -6,6 +6,28 @@ export async function POST(request) {
     // Hole die JSON-Daten vom Request
     const { name, email, message } = await request.json();
 
+    // Input-Validierung
+    if (!name || !email || !message) {
+        return new Response(JSON.stringify({ success: false, error: 'All fields are required.' }), {
+            status: 400,
+        });
+    }
+  
+    // E-Mail-Format validieren
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            return new Response(JSON.stringify({ success: false, error: 'Invalid email address.' }), {
+                status: 400,
+            });
+        }
+  
+    // Limit für Nachrichtenlänge
+    if (message.length > 1000) {
+        return new Response(JSON.stringify({ success: false, error: 'Message is too long.' }), {
+            status: 400,
+        });
+    }
+
     // Erstelle den Nodemailer-Transporter. Hier als Beispiel mit Gmail.
     // Hinweis: Für Gmail benötigst du ein App-Passwort oder musst unsicheren Zugriff aktivieren.
     let transporter = nodemailer.createTransport({
@@ -18,7 +40,8 @@ export async function POST(request) {
 
     // Konfiguriere die E-Mail
     const mailOptions = {
-      from: email, // Der Absender, den der Nutzer eingegeben hat (wird oft überschrieben)
+      from: process.env.EMAIL_USER, // Der Absender, den der Nutzer eingegeben hat (wird oft überschrieben)
+      replyTo: email,
       to: process.env.EMAIL_USER, // Empfänger – z.B. deine eigene E-Mail
       subject: `Neue Portfolio Nachricht: ${name} (${email})`,
       text: message,

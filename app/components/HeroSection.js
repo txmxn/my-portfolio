@@ -26,15 +26,15 @@ export default function HeroSection() {
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
           {/* Linke Spalte: Text */}
           <div className="px-14 md:w-1/2 flex flex-col md:ml-4 md:mb-28">
-            <h1 className="text-7xl font-bold mb-2">Hi, I am <span className="text-mainAkzent text-glow">Timon</span></h1>
+            <h1 className="text-7xl font-bold mb-2">Hi, I'm <span className="text-mainAkzent text-glow">Timon</span></h1>
             <p className="mb-6">
-              Developer & Cyber-Security Student 🚀
+              Computer Science & Cyber Security Student 🚀
             </p>
             <div className="flex gap-4">
               <a 
-                href=""
-                className="bg-black-500 text-mainAkzent px-8 md:px-16 py-3 rounded transform transition-transform duration-300 hover:scale-105 w-fit border border-mainAkzent">
-                Show CV
+                href="/about"
+                className="text-mainAkzent px-8 md:px-16 py-3 rounded transform transition-transform duration-300 hover:scale-105 w-fit border border-mainAkzent">
+                About Me
               </a>
               <a 
                 href="#projects" 
@@ -49,7 +49,8 @@ export default function HeroSection() {
           <div className="md:w-1/2 flex justify-center">
             <img 
               src="/images/hero-bg.png" 
-              alt="Timon Portät" 
+              alt="Timon Portrait" 
+              loading="lazy"
               className="object-contain md:h-120 w-auto"
             />
           </div>

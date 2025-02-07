@@ -5,8 +5,8 @@ const projectsData = [
     {
         id: 1,
         imageSrc: "images/encoder.png",
-        altText: "Encoder",
-        description: "Encoder",
+        altText: "Project 1",
+        description: "Test1",
     },
     {
         id: 2,
@@ -23,20 +23,14 @@ const projectsData = [
     {
         id: 4,
         imageSrc: "images/encoder.png",
-        altText: "Project 3",
+        altText: "Project 4",
         description: "Test4",
     },
     {
         id: 5,
         imageSrc: "images/encoder.png",
-        altText: "Project 3",
+        altText: "Project 5",
         description: "Test5",
-    },
-    {
-        id: 6,
-        imageSrc: "images/jannes.png",
-        altText: "Project 3",
-        description: "Test",
     },
 ];
 

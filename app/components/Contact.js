@@ -140,7 +140,7 @@ export default function Contact() {
                         />
                         </a>
                         <a 
-                            href="https://linkedin.com/in/timon" 
+                            href="https://linkedin.com/in/timon-kayser" 
                             target="_blank" 
                             rel="noreferrer"
                             className="hover:opacity-80 transition-opacity"
@@ -152,7 +152,7 @@ export default function Contact() {
                         />
                         </a>
                         <a 
-                            href="https://instagram.com/timon" 
+                            href="https://instagram.com/timon.ksr" 
                             target="_blank" 
                             rel="noreferrer"
                             className="hover:opacity-80 transition-opacity"
@@ -164,7 +164,7 @@ export default function Contact() {
                         />
                         </a>
                         <a 
-                            href="https://threads.com/timon" 
+                            href="https://threads.com/timon.ksr" 
                             target="_blank" 
                             rel="noreferrer"
                             className="hover:opacity-80 transition-opacity"
@@ -175,7 +175,7 @@ export default function Contact() {
                             className="h-6 w-6"
                         />
                         </a>
-                        <a 
+                        {/*<a 
                             href="https://x.com/timon" 
                             target="_blank" 
                             rel="noreferrer"
@@ -186,7 +186,7 @@ export default function Contact() {
                             alt="X" 
                             className="h-6 w-6"
                         />
-                        </a>
+                        </a>*/}
                     </div> 
                 </div>
             </div>
