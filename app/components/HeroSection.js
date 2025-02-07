@@ -28,7 +28,7 @@ export default function HeroSection() {
           <div className="px-14 md:w-1/2 flex flex-col md:ml-4 md:mb-28">
             <h1 className="text-7xl font-bold mb-2">Hi, I am <span className="text-mainAkzent text-glow">Timon</span></h1>
             <p className="mb-6">
-              Welcome to my digital playground, where I show my projects
+              Developer & Cyber-Security Student 🚀
             </p>
             <div className="flex gap-4">
               <a 

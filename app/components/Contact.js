@@ -94,7 +94,7 @@ export default function Contact() {
                     </div>
 
                     <button type="submit" className="bg-mainAkzent text-white py-2 px-4 rounded hover:opacity-80 transition-opacity">
-                        {status === "sending" ? "Sending..." : "Send Message"}
+                        {status === "sending" ? "Sending..." : "Work with me"}
                     </button>
 
                     {status === "success" && <p className="text-green-500 mt-2">Thanks for your message!</p>}
