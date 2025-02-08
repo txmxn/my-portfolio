@@ -3,6 +3,9 @@
 Welcome to my personal portfolio website, built with [Next.js](https://nextjs.org) and styled using [Tailwind CSS](https://tailwindcss.com).  
 Here, you can explore my projects, learn about my skills, and get to know me better. 😊
 
+## 🔗 Live Website
+[Visit My Portfolio](https://timon-portfolio.vercel.app)
+
 ## 📦 Tech Stack
 
 - **Frontend:** Next.js, React, Tailwind CSS

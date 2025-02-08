@@ -1,37 +1,16 @@
 "use client";
+import Link from "next/link";
 import { useRef } from "react";
 // components/Projects.js
 const projectsData = [
     {
         id: 1,
-        imageSrc: "images/encoder.png",
-        altText: "Project 1",
-        description: "Test1",
+        imageSrc: "images/projects/my_portfolio.png",
+        link: "https://github.com/txmxn/my-portfolio",
+        altText: "Portfolio Website",
+        description: "Portfolio Website",
     },
-    {
-        id: 2,
-        imageSrc: "images/encoder.png",
-        altText: "Project 2",
-        description: "Test2",
-    },
-    {
-        id: 3,
-        imageSrc: "images/encoder.png",
-        altText: "Project 3",
-        description: "Test3",
-    },
-    {
-        id: 4,
-        imageSrc: "images/encoder.png",
-        altText: "Project 4",
-        description: "Test4",
-    },
-    {
-        id: 5,
-        imageSrc: "images/encoder.png",
-        altText: "Project 5",
-        description: "Test5",
-    },
+    
 ];
 
 export default function Projects() {
@@ -53,7 +32,7 @@ export default function Projects() {
                     My Projects<span className="text-mainAkzent"></span> 
                 </h1>
                 <p className="text-white text-center text-opacity-30 text-xs">
-                    Used languages: C, C++, Python, Next.js, Java
+                    Used languages: Next.js, JavaScript, HTML, CSS
                 </p>
 
                 <div className="relative w-full">
@@ -67,11 +46,13 @@ export default function Projects() {
 
                     {/* Hier wird der Container referenziert */}
                     <div ref={scrollContainerRef} className="overflow-x-auto">
-                        <div className="flex flex-nowrap gap-8 justify-start pt-6">
+                        <div className="flex flex-nowrap gap-8 justify-center pt-6">
                             {projectsData.map((project) => (
                                 <div key={project.id} className="flex flex-col items-center flex-shrink-0 w-64 transform transition-transform duration-200 hover:scale-105">
-                                    <img src={project.imageSrc} alt={project.altText} className="h-48" />
-                                    <p className="text-white text-base mt-2">{project.description}</p> 
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer"> {/* Klickbarer Bereich */}
+                                        <img src={project.imageSrc} alt={project.altText} className="h-48" />
+                                        <p className="text-white text-center text-base mt-2">{project.description}</p> 
+                                    </a>
                                 </div>   
                             ))}
                         </div>
