@@ -38,7 +38,7 @@ export default function Contact({ language }) {
 
     return (
         <section id="contact" className="bg-black min-h-[40vh] py-10 px-4">
-            <h1 className="border-b pb-4 border-gray-700 mx-10 text-center text-6xl font-bold">
+            <h1 className="border-b pb-4 border-gray-700 mx-10 text-center text-6xl font-bold text-white">
                 {t?.title || "Contact"}
             </h1>
 
@@ -114,6 +114,14 @@ export default function Contact({ language }) {
                             <img src="/images/mail.png" alt="Email Icon" className="h-6 w-6" />
                             <span>timonkayser.contact@gmail.com</span>
                         </li>
+                        <div className="flex justify-center gap-4 mt-4">
+                            <a href="https://github.com/txmxn" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/github_logo.png" alt="GitHub" width={32} height={32} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/timon-kayser/" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/linkedin_logo.png" alt="LinkedIn" width={32} height={32} />
+                            </a>
+                        </div>
                     </ul>
                 </div>
             </div>
